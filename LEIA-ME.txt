@@ -1,0 +1,23 @@
+ToplevelSistemas - página Projetos atualizada
+
+Conteúdo:
+- projetos.php
+- assets/projetos/portal-climatico.png
+- assets/projetos/controle-projetos-financeiro.png
+- assets/projetos/erpmei-nfse.png
+- assets/projetos/sop-planejamento.png
+
+Instalação:
+1. Faça backup da página projetos.php atual.
+2. Envie projetos.php para a raiz do site, substituindo a página anterior.
+3. Envie a pasta assets/projetos para a pasta assets já existente, preservando os caminhos.
+4. Atualize o navegador com Ctrl+F5.
+
+A faixa "Demonstração em preparação" foi removida.
+As imagens usadas são:
+- Portal climático: captura enviada pelo usuário.
+- Controle de projetos: captura enviada pelo usuário, sem desfoque.
+- ERP MEI: captura com leve ocultação de nome e valor.
+- S&OP: captura com descrições/códigos de produtos desfocados e números visíveis.
+
+O cadastro de projetos permanece no array $projects em projetos.php. Os links de demonstração podem ser acrescentados futuramente.
