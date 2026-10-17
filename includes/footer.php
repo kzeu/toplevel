@@ -31,7 +31,7 @@
   </div>
 </footer>
 <?php $whatsappUrl = 'https://wa.me/' . preg_replace('/\D+/', '', WHATSAPP_NUMBER) . '?text=' . rawurlencode(WHATSAPP_MESSAGE); ?>
-<a class="whatsapp-float" href="<?= htmlspecialchars($whatsappUrl, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" aria-label="Fale com a ToplevelSistemas pelo WhatsApp" title="Fale conosco pelo WhatsApp"><i class="bi bi-whatsapp"></i><span>Vamos conversar</span></a>
+<a class="whatsapp-float" href="<?= htmlspecialchars($whatsappUrl, ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer" aria-label="Fale com a ToplevelSistemas pelo WhatsApp" title="Fale conosco pelo WhatsApp"><i class="bi bi-whatsapp"></i></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

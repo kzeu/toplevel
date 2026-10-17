@@ -114,6 +114,19 @@ $navItems = [
       box-shadow: 0 0 0 .18rem rgba(131, 197, 160, .25);
     }
 
+    
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background: rgba(16, 24, 32, 0.96);
+    border-bottom: 1px solid rgba(131, 197, 160, 0.22);
+    backdrop-filter: blur(14px);
+}
+
+
     @media (max-width: 991.98px) {
       .site-header .navbar {
         min-height: 74px;
@@ -161,6 +174,60 @@ $navItems = [
         transition: none;
       }
     }
+
+
+    /* ToplevelSistemas: menu fixo e identidade verde + cobre */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      background: rgba(16, 24, 32, .96);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(131, 197, 160, .22);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, .14);
+    }
+    .site-header .brand-mark {
+      background: linear-gradient(135deg, #D9A16F 0%, #A8754F 55%, #70462D 100%);
+      color: #101820;
+      box-shadow: 0 0 24px rgba(168, 117, 79, .18);
+    }
+    .site-header .navbar-nav .nav-link.active,
+    .site-header .navbar-nav .nav-link:hover,
+    .site-header .navbar-nav .nav-link:focus {
+      color: #83C5A0;
+    }
+    .site-header .navbar-nav .nav-link.active::after {
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: .25rem;
+      background: #83C5A0;
+      border-radius: 2px;
+    }
+    .site-header .btn-accent {
+      color: #F8F6F2;
+      background: linear-gradient(135deg, #A8754F 0%, #875638 100%);
+      border: 1px solid rgba(226, 177, 132, .8);
+      box-shadow: 0 0 22px rgba(168, 117, 79, .16);
+    }
+    .site-header .btn-accent:hover,
+    .site-header .btn-accent:focus {
+      color: #fff;
+      background: linear-gradient(135deg, #B98259 0%, #996342 100%);
+      border-color: #E2B184;
+      box-shadow: 0 0 26px rgba(168, 117, 79, .28);
+    }
+    @media (max-width: 991.98px) {
+      .site-header .navbar-collapse {
+        background: rgba(16, 24, 32, .98);
+        border-top: 1px solid rgba(131, 197, 160, .14);
+        margin-top: .6rem;
+        padding: .75rem 0 1rem;
+      }
+      .site-header .navbar-nav .nav-link.active::after { display: none; }
+    }
+
   </style>
 </head>
 <body>
