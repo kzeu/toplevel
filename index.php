@@ -15,7 +15,7 @@ require __DIR__ . '/includes/header.php';
         <div class="hero-actions">
           <a class="btn btn-accent px-4 py-3" href="projetos.php">Conheça os projetos <i class="bi bi-arrow-up-right ms-2"></i></a>
           <a class="btn btn-outline-light px-4 py-3" href="contato.php">Fale sobre sua ideia</a>
-          <a class="text-link hero-products-link" href="produtos.php">Explore nossos produtos <i class="bi bi-arrow-right ms-1"></i></a>
+          <a class="text-link hero-products-link" href="loja.php">Visite nossa loja <i class="bi bi-arrow-right ms-1"></i></a>
         </div>
       </div>
       <div class="col-lg-4">

@@ -290,7 +290,7 @@ function mpwh_send_order_confirmation(PDO $db, int $orderId): bool
             '<strong>Data:</strong> ' . $h($order['paid_at'] ? date('d/m/Y H:i', strtotime($order['paid_at'])) : date('d/m/Y H:i')) . '</p>' .
             '<table style="width:100%;border-collapse:collapse"><thead><tr><th align="left" style="padding:12px">Produto</th><th align="left" style="padding:12px">Licença</th></tr></thead><tbody>' . $rows . '</tbody></table>' .
             '<p style="margin-top:22px">Guarde este e-mail: ele contém os dados da sua licença.</p>' .
-            '<p>O instalador ainda não está disponível para download. Assim que estiver liberado, você poderá acessá-lo pela loja.</p>' .
+            '<p>Para consultar os arquivos digitais disponibilizados para sua compra, acesse a <a href="' . $h(rtrim((string)STORE_BASE_URL, '/') . '/minha-conta.php') . '">Área do Cliente</a>.</p>' .
             '<p>Obrigado por comprar na <strong>ToplevelSistemas</strong>!</p></div>';
         $mail->AltBody = 'Pagamento aprovado. Pedido ' . $order['order_number'] . '. Valor: R$ ' .
             number_format((float)$order['total'], 2, ',', '.') . '. Consulte a licença neste e-mail em formato HTML.';

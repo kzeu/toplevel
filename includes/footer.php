@@ -12,7 +12,7 @@
       <div class="col-6 col-lg-3 offset-lg-1">
         <h2 class="footer-heading">Explorar</h2>
         <ul class="footer-links">
-          <li><a href="solucoes.php">Soluções</a></li><li><a href="projetos.php">Projetos</a></li><li><a href="produtos.php">Produtos</a></li><li><a href="loja.php">Loja digital</a></li><li><a href="sobre.php">Sobre</a></li>
+          <li><a href="solucoes.php">Soluções</a></li><li><a href="projetos.php">Projetos</a></li><li><a href="loja.php">Loja digital</a></li><li><a href="sobre.php">Sobre</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-3">

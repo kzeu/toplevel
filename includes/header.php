@@ -6,7 +6,6 @@ $navItems = [
     'index.php' => 'Início',
     'solucoes.php' => 'Soluções',
     'projetos.php' => 'Projetos',
-    'produtos.php' => 'Produtos',
     'loja.php' => 'Loja',
     'acesso-cliente.php' => 'Área do Cliente',
     'sobre.php' => 'Sobre',

@@ -111,11 +111,11 @@ function store_upload_file(
     // INSTALADOR
     } elseif ($type === 'installer') {
 
-        $allowed = ['zip', 'exe', 'msi'];
+        $allowed = ['zip', 'exe', 'msi', 'txt', 'pdf'];
 
         if (!in_array($extension, $allowed, true)) {
             throw new RuntimeException(
-                'O instalador deve ser ZIP, EXE ou MSI.'
+                'O arquivo para entrega deve ser ZIP, EXE, MSI, TXT ou PDF.'
             );
         }
 
@@ -730,29 +730,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="col-md-6">
 
                 <label class="form-label">
-                    Instalador do produto
+                    Arquivo para entrega (instalador ou instruções)
                 </label>
 
                 <input
                     class="form-control"
                     type="file"
                     name="installer_file"
-                    accept=".zip,.exe,.msi"
+                    accept=".zip,.exe,.msi,.txt,.pdf"
                 >
 
                 <div class="form-text">
-                    ZIP, EXE ou MSI. Máximo 500 MB.
+                    Envie um único arquivo: ZIP, EXE, MSI, TXT ou PDF. Máximo 500 MB.
                 </div>
 
                 <?php if (!empty($p['file_path'])): ?>
 
                     <div class="small text-success mt-2">
                         <i class="bi bi-check-circle"></i>
-                        Instalador cadastrado: <?= store_h(basename((string)$p['file_path'])) ?>
+                        Arquivo cadastrado: <?= store_h(basename((string)$p['file_path'])) ?>
                     </div>
 
                     <div class="small text-secondary">
-                        Se não enviar outro, o instalador atual será mantido.
+                        Se não enviar outro, o arquivo atual será mantido.
                     </div>
 
                 <?php endif; ?>

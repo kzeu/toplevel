@@ -11,3 +11,12 @@ Thumbs.db
 /storage/logs/*
 !/storage/logs/.gitkeep
 
+
+# Configurações privadas de produção
+/config/store.php
+/config/database.php
+/config/smtp.php
+/config/mail.php
+
+
+/config/email.php
