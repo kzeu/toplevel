@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+
+# Configurações privadas de produção
+/config/store.php
+/config/database.php
+/config/smtp.php
+/config/mail.php
+
+
+/config/email.php
