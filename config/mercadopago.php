@@ -12,5 +12,5 @@ define('MP_WEBHOOK_SECRET', 'f65ad508a94bddaac5669b8662333e41407f94cbb8f335013cd
 
 define(
     'MP_PUBLIC_BASE_URL',
-    'https://cole-substantially-blanket-fairfield.trycloudflare.com'
+    'https://christina-procurement-switched-royal.trycloudflare.com'
 );

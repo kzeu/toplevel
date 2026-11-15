@@ -34,26 +34,21 @@ natcasesort($categories);
 
 require __DIR__ . '/includes/header.php';
 ?>
-<section class="page-hero">
+<section class="page-hero store-hero">
     <div class="container">
-        <span class="eyebrow">Loja digital Toplevel</span>
-        <h1>Software para simplificar o trabalho e impulsionar negócios.</h1>
-        <p>Encontre sistemas, ferramentas e materiais digitais para facilitar sua rotina e desenvolver seu negócio.</p>
-    </div>
-</section>
-
-<section class="section-pad">
-    <div class="container">
-        <div class="mb-4">
-            <span class="section-kicker">Catálogo digital</span>
-            <h2 class="section-title">Encontre o que você precisa</h2>
-            <p class="text-secondary mb-0">Pesquise pelo nome ou filtre por categoria.</p>
-        </div>
-
-        <div class="store-payment-notice mb-4" role="note">
+        <span class="eyebrow">Catálogo digital</span>
+        <h1>Encontre soluções digitais para levar seu negócio mais longe.</h1>
+        <p>Tecnologia e inovação para empresas de todos os portes. Conheça soluções digitais, sistemas de gestão, ferramentas de automação e projetos personalizados para transformar desafios em resultados</p>
+        
+        <div class="store-payment-notice mt-4" role="note">
             <i class="bi bi-envelope-check" aria-hidden="true"></i>
             <span><strong>Receba seu produto por e-mail.</strong> Após a confirmação do pagamento, enviaremos automaticamente um e-mail com as instruções e o link para baixar seu produto.</span>
         </div>
+    </div>
+</section>
+
+<section class="section-pad store-catalog-section">
+    <div class="container">
 
         <?php if ($dbError): ?>
             <div class="alert alert-info">Não foi possível carregar o catálogo neste momento.</div>
@@ -144,6 +139,9 @@ require __DIR__ . '/includes/header.php';
 </section>
 
 <style>
+.store-hero .store-payment-notice{max-width:900px}
+.store-hero .store-payment-notice strong{color:#173d2b}
+.store-catalog-section{padding-top:2.5rem}
 .store-payment-notice{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.15rem;border:1px solid #dcebe1;border-radius:14px;background:#f4faf6;color:#34483b;font-size:.95rem;line-height:1.5}
 .store-payment-notice>.bi{flex:0 0 auto;color:#16834a;font-size:1.25rem;margin-top:.05rem}
 .store-payment-notice strong{color:#173d2b}

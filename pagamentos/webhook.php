@@ -206,11 +206,12 @@ function mpwh_send_order_confirmation(PDO $db, int $orderId): bool
             return false;
         }
 
+        // A entrega usa somente os dados gravados no próprio pedido.
+        // Não depende de conta, senha ou cadastro autenticado de cliente.
         $q = $db->prepare("SELECT
                 o.id, o.order_number, o.customer_name, o.customer_email,
-                o.total, o.paid_at, c.email AS account_email
+                o.total, o.paid_at
             FROM orders o
-            INNER JOIN customers c ON c.id = o.customer_id
             WHERE o.id = ? AND o.payment_status = 'paid'
             LIMIT 1");
         $q->execute([$orderId]);
